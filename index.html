@@ -50,6 +50,12 @@
             padding-bottom: 0.5rem;
             border-bottom: 1px solid #ddd;
         }
+
+        h3 {
+            color: var(--secondary-color);
+            margin: 1.2rem 0 0.5rem 0;
+            font-size: 1.3rem;
+        }
         
         .subtitle {
             font-size: 1.2rem;
@@ -116,10 +122,29 @@
         
         .book, .publication {
             margin-bottom: 1rem;
+            padding-left: 0;
         }
         
         .book-title, .pub-title {
             font-weight: bold;
+            color: var(--dark-color);
+        }
+
+        .pub-venue {
+            font-style: italic;
+            color: #555;
+        }
+
+        .pub-citation {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .pub-status {
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 0.9rem;
         }
         
         .skills {
@@ -131,6 +156,21 @@
         .skill-category {
             flex: 1;
             min-width: 250px;
+        }
+
+        .stats-box {
+            background-color: #e8f4f8;
+            border-left: 4px solid var(--secondary-color);
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .stats-box ul {
+            padding-left: 0;
+        }
+
+        .stats-box li::before {
+            content: "→";
         }
         
         footer {
@@ -203,7 +243,7 @@
             <li>Machine Learning</li>
             <li>Cybersecurity</li>
             <li>Assistive Technologies</li>
-            <li>Electronic Disign Automation (EDA)</li>
+            <li>Electronic Design Automation (EDA)</li>
             <li>Computer Architecture</li>
         </ul>
     </section>
@@ -212,59 +252,224 @@
         <h2>Books</h2>
         <div class="book">
             <div class="book-title">"The Declarative Mind: Programming Without How" (2024)</div>
-            <div>Published by Kindle Direct Publishing, ISBN: 979-8301187919</div>
+            <div>Published by Kindle Direct Publishing, 288 pages, ISBN: 979-8301187919</div>
         </div>
         <div class="book">
             <div class="book-title">"Randomness: The Hidden Force Behind AI's Success" (2024)</div>
-            <div>Published by Kindle Direct Publishing, ISBN: 979-8301912306</div>
+            <div>Published by Kindle Direct Publishing, 238 pages, ISBN: 979-8301912306</div>
         </div>
-    </section>
-
-    <section class="section" id="publications">
-        <h2>Selected Publications</h2>
-        <div class="publication">
-            <div class="pub-title">"Declarative Synthesis and Multi-Objective Optimization of Stripboard Circuit Layouts Using Answer Set Programming"</div>
-            <div>IEEE International Conference on Computer Design (ICCD) 2025</div>
-        </div>
-        <div class="publication">
-            <div class="pub-title">"Compositional Function Networks: A High-Performance Alternative to Deep Neural Networks with Built-in Interpretability"</div>
-            <div>Preprint (arXiv.org) 2025</div>
-        </div>
-        <div class="publication">
-            <div class="pub-title">"Exploring Answer Set Programming for Provenance Graph-Based Cyber Threat Detection: A Novel Approach"</div>
-            <div>POPL - Practical Aspects of Declarative Languages (POPL/PADL) 2025</div>
-        </div>
-        <div class="publication">
-            <div class="pub-title">"The Immutable Tensor Architecture: A Pure Dataflow Approach for Secure, Energy-Efficient AI Inference"</div>
-            <div>Preprint (arXiv.org) 2025</div>
-        </div>
-        <div class="publication">
-            <div class="pub-title">"Bridging Traditional Machine Learning and Large Language Models: A Two-Part Course Design for Modern AI Education"</div>
-            <div>Consortium for Computing Sciences in Colleges (CCSC) SE 2025</div>
-        </div>
-        <div class="publication">
-            <div class="pub-title">"Graph Based Answer Set Programming Solver Systems"</div>
-            <div>International Conference on Logic Programming (ICLP) 2021</div>
-        </div>
-        <div class="publication">
-            <div class="pub-title">"DiscASP: A Graph-based ASP System for Finding Relevant Consistent Concepts with Applications to Conversational Socialbots"</div>
-            <div>International Conference on Logic Programming (ICLP) 2021</div>
-        </div>
-        <div class="publication">
-            <div class="pub-title">"grASP: A Graph Based ASP-Solver and Justification System"</div>
-            <div>CoRR abs/2104.01190, 2021</div>
-        </div>
-        <p>
-            <a href="https://scholar.google.com/citations?hl=en&user=i1ogBrYAAAAJ" target="_blank">More publications on Google Scholar</a>
-        </p>
     </section>
 
     <section class="section" id="patents">
         <h2>Patents</h2>
         <div class="publication">
-            <div class="pub-title">"SYSTEM AND METHOD FOR AUTOMATED DESIGN OF CIRCUIT LAYOUTS COMPRISING ONE OR MORE CIRCUIT BOARDS"</div>
-            <div>Provisional Patent Filed (2025)</div>
+            <div class="pub-title">"System and Method for Automated Design of Circuit Layouts Comprising One or More Circuit Boards"</div>
+            <div class="pub-venue">Provisional Patent Filed (2025)</div>
         </div>
+    </section>
+
+    <section class="section" id="publications">
+        <h2>Publications</h2>
+        
+        <div class="stats-box">
+            <strong>Publication Metrics:</strong>
+            <ul>
+                <li>Total Citations: 145</li>
+                <li>h-index: 6</li>
+                <li>i10-index: 6</li>
+                <li><a href="https://scholar.google.com/citations?user=i1ogBrYAAAAJ" target="_blank">Google Scholar Profile</a></li>
+            </ul>
+        </div>
+
+        <h3>Peer-Reviewed Conference Papers</h3>
+        
+        <div class="publication">
+            <div class="pub-title">Declarative Synthesis and Multi-Objective Optimization of Stripboard Circuit Layouts Using Answer Set Programming</div>
+            <div class="pub-venue">43rd IEEE International Conference on Computer Design (ICCD), 2025</div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">Exploring Answer Set Programming for Provenance Graph-Based Cyber Threat Detection: A Novel Approach</div>
+            <div class="pub-venue">27th International Symposium on Practical Aspects of Declarative Languages (PADL), 2025</div>
+            <div class="pub-citation">1 citation</div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">Modeling and Verification of Real-Time Systems with the Event Calculus and s(CASP)</div>
+            <div class="pub-venue">International Symposium on Practical Aspects of Declarative Languages (PADL), pp. 181-190, 2022</div>
+            <div>S.C. Varanasi, J. Arias, E. Salazar, <strong>F. Li</strong>, K. Basu, and G. Gupta</div>
+            <div class="pub-citation">14 citations</div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">DiscASP: A Graph-based ASP System for Finding Relevant Consistent Concepts with Applications to Conversational Socialbots</div>
+            <div class="pub-venue">International Conference on Logic Programming (Technical Communications), 2021</div>
+            <div class="pub-citation">15 citations</div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">Graph Based Answer Set Programming Solver Systems</div>
+            <div class="pub-venue">International Conference on Logic Programming (Technical Communications), 2021</div>
+            <div class="pub-citation">1 citation</div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">Toward Semi-Automated Role Mapping for IoT Systems in Smart Cities</div>
+            <div class="pub-venue">2019 IEEE International Smart Cities Conference (ISC2), pp. 205-211, 2019</div>
+            <div class="pub-citation">5 citations</div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">Improving the Smartness of Cloud Management via Machine Learning Based Workload Prediction</div>
+            <div class="pub-venue">2018 IEEE 42nd Annual Computer Software and Applications Conference (COMPSAC), 2018</div>
+            <div>Y. Yu, V. Jindal, F. Bastani, <strong>F. Li</strong>, and I.L. Yen</div>
+            <div class="pub-citation">48 citations</div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">A Novel Approach for Assessing Power Wheelchair Users' Mobility by Using Curve Fitting</div>
+            <div class="pub-venue">International Conference on Digital Human Modeling and Applications in Health, Safety, Ergonomics and Risk Management (DHM), 2018</div>
+            <div>J. Fu, <strong>F. Li</strong>, M. Ong, T. Cook, G. Qian, and Y.D. Zhao</div>
+            <div class="pub-citation">1 citation</div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">A Feasible and Terrain-Insensitive Approach for Analyzing Power Wheelchair Users' Mobility</div>
+            <div class="pub-venue">2017 IEEE 29th International Conference on Tools with Artificial Intelligence (ICTAI), 2017</div>
+            <div class="pub-citation">2 citations</div>
+        </div>
+
+        <h3>Journal Publications</h3>
+
+        <div class="publication">
+            <div class="pub-title">Bridging Traditional Machine Learning and Large Language Models: A Two-Part Course Design for Modern AI Education</div>
+            <div class="pub-venue">Journal of Computing Sciences in Colleges, 2025</div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">Prolog: Past, Present, and Future</div>
+            <div class="pub-venue">Prolog: The Next 50 Years, pp. 48-61, 2023</div>
+            <div>G. Gupta, E. Salazar, F. Shakerin, J. Arias, S.C. Varanasi, K. Basu, H. Wang, <strong>F. Li</strong>, et al.</div>
+            <div class="pub-citation">4 citations</div>
+        </div>
+
+        <h3>Workshop Papers with Proceedings</h3>
+
+        <div class="publication">
+            <div class="pub-title">Tutorial: Automating Commonsense Reasoning</div>
+            <div class="pub-venue">ICLP Workshops, 2022</div>
+            <div>G. Gupta, E. Salazar, S.C. Varanasi, K. Basu, J. Arias, F. Shakerin, <strong>F. Li</strong>, et al.</div>
+            <div class="pub-citation">4 citations</div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">Automating Common Sense Reasoning with ASP and s(CASP)</div>
+            <div class="pub-venue">Proceedings of 2nd Workshop on Goal-directed Execution of Answer Set Programs, 2022</div>
+            <div>G. Gupta, E. Salazar, S.C. Varanasi, K. Basu, J. Arias, F. Shakerin, R. Min, <strong>F. Li</strong>, et al.</div>
+            <div class="pub-citation">11 citations</div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">Knowledge-assisted Reasoning of Model-Augmented System Requirements with Event Calculus and Goal-directed Answer Set Programming</div>
+            <div class="pub-venue">8th Workshop on Horn Clauses for Verification and Synthesis (HCVS 2021), EPTCS 344, pp. 79-90, 2021</div>
+            <div>B. Hall, S.C. Varanasi, J. Fiedor, J. Arias, K. Basu, <strong>F. Li</strong>, D. Bhatt, K. Driscoll, et al.</div>
+            <div class="pub-citation">18 citations</div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">Formalizing Informal Logic and Natural Language Deductivism</div>
+            <div class="pub-venue">ICLP Workshops, 2021</div>
+            <div>G. Gupta, S. Varanasi, K. Basu, Z. Chen, E. Salazar, F. Shakerin, S. Erbatur, <strong>F. Li</strong>, et al.</div>
+            <div class="pub-citation">4 citations</div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">Modelling and Verification of Timed Systems with the Event Calculus and s(CASP)</div>
+            <div class="pub-venue">ICLP Workshops, 2021</div>
+            <div>S.C. Varanasi, B. Hall, J. Arias, E. Salazar, <strong>F. Li</strong>, K. Basu, K. Driscoll, and G. Gupta</div>
+            <div class="pub-citation">1 citation</div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">ASP Rendering of Holloway and Wasson's Primer on Overarching Properties</div>
+            <div class="pub-venue">2020 Workshop</div>
+            <div>G. Gupta, S. Varanasi, K. Basu, Z. Chen, E. Salazar, F. Shakerin, S. Erbatur, <strong>F. Li</strong>, et al.</div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">Automating Common Sense Reasoning</div>
+            <div class="pub-venue">Tutorial talk, 2020</div>
+            <div>G. Gupta, E. Salazar, S.C. Varanasi, K. Basu, F. Shakerin, <strong>F. Li</strong>, H. Wang, et al.</div>
+            <div class="pub-citation">3 citations</div>
+        </div>
+
+        <h3>Competition Proceedings</h3>
+
+        <div class="publication">
+            <div class="pub-title">CASPR: A Commonsense Reasoning-based Conversational Socialbot</div>
+            <div class="pub-venue">4th Proceedings of Alexa Prize (Alexa Prize 2021), 2021</div>
+            <div>K. Basu, H. Wang, N. Dominguez, X. Li, <strong>F. Li</strong>, S.C. Varanasi, and G. Gupta</div>
+            <div class="pub-citation">11 citations</div>
+        </div>
+
+        <h3>Preprints and Papers Under Review</h3>
+
+        <div class="publication">
+            <div class="pub-title">Logic-Driven Cybersecurity: A Novel Framework for System Log Anomaly Detection using Answer Set Programming</div>
+            <div class="pub-venue">arXiv preprint arXiv:2512.04908, 2025</div>
+            <div><strong>F. Li</strong>, F. Zuo, and G. Gupta</div>
+            <div class="pub-status">Submitted to FLOPS 2026</div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">Computing Supported Models via Transformation to Stable Models</div>
+            <div class="pub-venue">arXiv preprint arXiv:2512.05437, 2025</div>
+            <div><strong>F. Li</strong> and G. Gupta</div>
+            <div class="pub-status">Submitted to FLOPS 2026</div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">The Immutable Tensor Architecture: A Pure Dataflow Approach for Secure, Energy-Efficient AI Inference</div>
+            <div class="pub-venue">arXiv preprint arXiv:2511.22889, 2025</div>
+            <div class="pub-status">Submitted to IEEE Access</div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">Compositional Function Networks: A High-Performance Alternative to Deep Neural Networks with Built-in Interpretability</div>
+            <div class="pub-venue">arXiv preprint arXiv:2507.21004, 2025</div>
+            <div class="pub-status">Planned submission to IJCAI 2026</div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">Teaching Multiple Paradigms for Intelligent Systems: Integrating Search, Knowledge-Based Reasoning, and Machine Learning in Graduate Education</div>
+            <div class="pub-status">Submitted to CCSC:CP 2026</div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">Generative AI and Software Development Job Security: Challenges and Insights for Computing Education</div>
+            <div>F. Zuo, G. Qian, <strong>F. Li</strong>, Y. Song, and X. Zhang</div>
+            <div class="pub-status">Submitted to CCSC:CP 2026</div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">Graph-based Interpretation of Normal Logic Programs</div>
+            <div class="pub-venue">arXiv preprint arXiv:2111.13249, 2021</div>
+            <div><strong>F. Li</strong>, E. Salazar, and G. Gupta</div>
+            <div class="pub-citation">1 citation</div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">grASP: A Graph Based ASP-Solver and Justification System</div>
+            <div class="pub-venue">arXiv preprint arXiv:2104.01190, 2021</div>
+            <div><strong>F. Li</strong>, H. Wang, and G. Gupta</div>
+            <div class="pub-citation">1 citation</div>
+        </div>
+
+        <p style="margin-top: 1.5rem;">
+            <a href="https://scholar.google.com/citations?hl=en&user=i1ogBrYAAAAJ" target="_blank">
+                <i class="fab fa-google"></i> Complete publication list on Google Scholar
+            </a>
+        </p>
     </section>
 
     <section class="section" id="academic-service">
@@ -357,7 +562,6 @@
             <li>RCSA Grant: "A Novel Health Tracker for Power Wheelchair Users Using Microsoft Bands" (2016-2017)</li>
             <li>RCSA Grant: "A Novel Classifier for Smartphone Collected Wheelchair Maneuvering Data" (2017-2018)</li>
         </ul>
-        
     </section>
 
     <footer>
@@ -365,9 +569,23 @@
     </footer>
 
     <script>
-        // You can add JavaScript here if needed
+        // Smooth scrolling for anchor links
         document.addEventListener('DOMContentLoaded', function() {
             console.log('Page loaded successfully');
+            
+            // Add smooth scrolling to all links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
         });
     </script>
 </body>
